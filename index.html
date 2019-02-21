@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Title</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+	<style type="text/css">
+		#welcome_text{
+			background-color: red;
+		}
+
+		#square{
+			background: yellow;
+			width: 100px;
+			height:100px;
+		}
+	</style>
+
+	<div class="container-fluid">
+		<p id="welcome_text">
+			You are welcome to Alabian Solutions
+		</p>
+		<p id="story">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<input class="form-control" id="enter_name" type="text" name="" placeholder="Enter Name">
+		<input class="form-control" id="enter_email" type="email" name="" placeholder="Enter Name">
+		<input class="form-control" id="enter_password" type="password" name="" placeholder="Enter Name">
+
+
+	</div>
+
+	<div class="container-fluid">
+		<div id="square" onmouseover="changeColor()" onmouseout="reverseColor()">
+			
+		</div>
+		
+	</div>
+
+	<div>
+		<input type="text" class="col-4 form-control" name="">
+		<button id="square" class="btn btn-primary" type="button" onclick="clickme()" onmouseover="changeColor()">Click Me</button>
+	</div>
+
+<div class="container fluid">
+	
+		
+			<input type="text" class="col-4 form-control" name="" placeholder="enter name">
+			<br><br>
+			<input type="text" class="col-4 form-control" name="" value="email" placeholder="enter name">
+			<br><br>
+			<input type="password" class="col-4 form-control" name="" placeholder="enter password">
+			<br><br>
+			<button class="btn btn-primary" type="button" onclick="validateFields()">Login</button>
+		
+		
+
+</div>
+
+<div id="display_current_time">
+
+</div>
+
+<!-- <style type="text/css">
+	
+	h3{
+		color: red;
+		padding: 15px;
+	}
+	button{
+		color: green;
+		background-color: white;
+	}
+	h1{
+		color:blue;
+	}
+</style>
+
+
+<script type="text/javascript">
+	document.write("<h1>Welcome to Javascript class</h1>");
+	document.write("<h3 style'color:green'>How are you today?</h3>");
+	document.write("<button><h3>start</h3></button>")
+	document.write("<br>")
+	var number1=6000, number2=2019;
+	var answer=(number1*number2);
+	document.write(answer);
+	document.write("<br>")
+	var sum=(10/100*(number1));
+	document.write(sum);
+	document.write("<br>")
+	document.write("ten percent of " +number1+ " is: " +sum)
+	
+
+	document.write("<br>")
+	var length1=15, length2=30, height=10;
+	var area=(height*(length1+length2)/2);
+	document.write(area);
+	document.write("the area of the trapezium is:"+area)
+
+	document.write("<br>")
+	var a=5, b=6, c=1;
+	var formular1= ((-b)+(Math.sqrt(Math.pow(b,2)-(4*a*c))))/(2*a);
+	document.write(formular1);
+	document.write("<br>")
+	document.write("x=" +formular1);
+	document.write("<br>")
+	var formular2= ((-b)-(Math.sqrt(Math.pow(b,2)-(4*a*c))))/(2*a);
+	document.write(formular2);
+	document.write("<br>")
+	document.write("x=" +formular2);
+	document.write("<br>")
+	document.write(1==10);
+	document.write("<br>")
+	var country1="Nigeria", country2="china";
+
+	if(country2=="japan"){
+		document.write("You are a japanese");
+	}
+	else{
+		document.write("you are not a japanese");
+	}
+	document.write("<br>")
+
+	var age="john";
+	if (age < 18){
+		document.write("you are not allowed to buy a drink");
+	}
+	else if(age>=18){
+		document.write("you can buy a drink");
+	}
+	// else if(age > 18){
+	// 	document.write("you can buy a drink");
+	// }
+	else{
+		document.write("cant get your age");
+	}
+	document.write("<br>")
+
+var suitColor="black";
+
+if(suitColor=="black"){
+	document.write("you are allowed");
+}
+else if(suitColor=="yellow"){
+	document.write("you are not allowed");
+}
+
+else{
+	document.write("cant find color");
+}
+document.write("<br>")
+var items=["salt", "yam", "fish","vegetables", "plaintain"];
+document.write(items[0]);
+document.write("<br>");
+document.write(items[1]);
+document.write("<br>");
+document.write(items[2]);  
+document.write("<br>");
+document.write(items[3]);
+document.write("<br>")
+document.write(items[4]);
+document.write("<br>");
+var prize=[29,78,20,45,150,200,20,30,40,28];
+document.write(prize[0]);
+document.write("<br>");
+document.write(prize[1]);
+document.write("<br>")
+document.write(prize[2]);
+document.write("<br>");
+document.write(prize[3]);
+document.write("<br>")
+document.write(prize[4]);
+document.write("<br>");
+document.write(prize[5]);
+document.write("<br>")
+document.write(prize[6]);
+document.write("<br>")
+document.write(prize[7]);
+document.write("<br>")
+document.write(prize[8]);
+document.write("<br>")
+document.write(prize[9]);
+
+document.write("<br>")
+for(var i=0;i<5;i++){
+	document.write(items[i] + "<br>");
+}
+document.write("<br>")
+for(var i=0;i<10;i++){
+	document.write(prize[i]+"<br>")
+}
+document.write("<br>")
+for(i=0;i<prize.length;i++){
+	document.write(prize[i]+"<br>");
+}
+
+document.write("<br>")
+var countries=["nigeria", "bostwana","niger","sudan","egpyt","algeria","mali","angola","congo","chad"];
+document.write(countries.length);
+
+for(var i=0;i<10;i++){
+	document.write(countries[i]+"<br>")
+}
+document.write("<br>")
+countries.push("uganda","zambia");
+document.write(countries);
+document.write("<br>")
+countries.pop();
+countries.push("tunisia","lesotho");
+document.write(countries);
+
+document.write("<br>")
+var string= " We are Venom? !";
+document.write(string.slice(7,12));
+document.write(string.slice(0,3));
+
+</script> -->
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
